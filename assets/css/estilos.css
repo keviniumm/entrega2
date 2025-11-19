@@ -6,18 +6,29 @@
 
 /*ordenas-padre-hijo*/
 body {
-    margin: 40px;
+    margin: 60px;
+    background-color: rgb(184, 224, 161);
 }
 
-header img {
-    margin-bottom: 20px;
+/* BARRA DE NAVEGACION*/
+.navbar-brand img {
+    width: 40px;
+    height: auto;
 }
 
+/*h1 y h2*/
 h1 {
     color: red;
     text-align: center;
 }
 
+h2 {
+    color: rgb(197, 88, 60);
+    text-align: center;
+    margin: 30px;
+}
+
+/*imagenes*/
 img {
     display: block;
     margin: auto;
@@ -25,29 +36,86 @@ img {
     height: 200px;
 }
 
-main img {
-    display: inline-block;
-    margin: 100px;
-    width: 150px;
-    height: 100px;
+header img {
+    margin-bottom: 20px;
 }
 
-h2 {
-    color: rgb(197, 88, 60);
-    text-align: center;
+/*containers*/
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "el-cronista . ilprofesional"
+        "the-economist . forbes";
+    border: 5px solid black;
+    margin: 50px;
+}
+
+.el-cronista {
+    grid-area: el-cronista;
+    display: flex;
+    position: relative;
+}
+
+.ilprofesional {
+    grid-area: ilprofesional;
+    display: flex;
+    position: relative;
+}
+
+.the-economist {
+    grid-area: the-economist;
+    display: flex;
+    position: relative;
+
+}
+
+.forbes {
+    grid-area: forbes;
+    display: flex;
+    position: relative;
+}
+
+.container-grid div img {
+    width: 100%;
+    height: 100%;
+}
+
+main .container-grid a:link{
+    color: rgb(189, 194, 54);
+    bottom: 10px;            
+    position: absolute;
+    left: 50%;               
+}
+
+.container .col p{
+    width: 300px;
+}
+
+/*estilos links*/
+a{
+    color: rgb(27, 27, 23);
+}
+
+a:visited{
+    color: brown;
+}
+
+.pages{
+margin: 50px;
 }
 
 p {
     font-family: "Roboto", sans-serif;
     margin-bottom: 40px;
     font-size: 20px;
+    border: 6px solid green;
 }
 
-
-
-main div a {
-    display: inline;
-    margin: 160px;
+/*footer*/
+footer{
+    margin: 30px;
 }
 
 footer nav {
@@ -58,8 +126,10 @@ footer nav {
 table {
     margin-bottom: 20px;
 }
+table, th, td {
+    border: 1px solid black;
+}
 
-td,
 th {
     text-align: lefth;
 }
@@ -73,7 +143,8 @@ video {
     color: rgba(rgb(24, 209, 45), green, blue);
 }
 
-/*hr-utilizados-espaciar*/
-hr {
-    margin-bottom: 20px;
-}
+
+
+
+
+
