@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ordenas-padre-hijo*/
+body {
+    margin: 40px;
+}
+
+header img {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+}
+
+main img {
+    display: inline-block;
+    margin: 100px;
+    width: 150px;
+    height: 100px;
+}
+
+h2 {
+    color: rgb(197, 88, 60);
+    text-align: center;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+
+
+main div a {
+    display: inline;
+    margin: 160px;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+/*tabla*/
+table {
+    margin-bottom: 20px;
+}
+
+td,
+th {
+    text-align: lefth;
+}
+
+/*video*/
+video {
+    margin-bottom: 20px;
+}
+
+.comentarios {
+    color: rgba(rgb(24, 209, 45), green, blue);
+}
+
+/*hr-utilizados-espaciar*/
+hr {
+    margin-bottom: 20px;
+}
